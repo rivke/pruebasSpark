@@ -20,15 +20,15 @@ public class Main {
 		Updatable2 u = new EmpleadoView2();
 		
 		
-		 get("/regi", (request, response) -> {
+		/* get("/regi", (request, response) -> {
 			
 				 Map<String, Object> model = new HashMap<String, Object>();
-	            model.put("name", update(u));
+	           // model.put("name", update(u));
 	            
 		      return new ModelAndView(model, "prueba.vtl");
 		    }, vel());
-		 
-		  /*staticFileLocation("/public");
+		 */
+		  staticFileLocation("/public");
 		    
 		    get("/regi", (request, response) -> {
 		      return new ModelAndView(new HashMap(), "form.vtl");
@@ -44,7 +44,7 @@ public class Main {
 	            model.put("email", request.queryParams("email") != null ? request.queryParams("email") : "unknown");
 		      return new ModelAndView(model, "mostrar3.vtl");
 		    }, vel());
-		    */
+		    
 		
 		
 		
