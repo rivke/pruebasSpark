@@ -21,8 +21,7 @@ public class Main {
 		
 		
 		 get("/regi", (request, response) -> {
-			 String name = "rebe";//update(u);
-			 
+			
 				 Map<String, Object> model = new HashMap<String, Object>();
 	            model.put("name", update(u));
 	            
